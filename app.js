@@ -1,9 +1,3 @@
-
-// const fromCurrency = document.getElementById('from-currency');
-// const toCurrency = document.getElementById('to-currency');
-// const fromFlag = document.getElementById('from-flag');
-// const toFlag = document.getElementById('to-flag');
-
 const dropDowns = document.querySelectorAll(".drop-down select");
 const btn = document.querySelector("form button")
 
