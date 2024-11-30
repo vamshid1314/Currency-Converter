@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form id="currency-form">
+            <div class="amount">
+                <p>Enter the Amount: </p>
+                <input value="0.0" type="text" id="input-val">
+            </div>
+
+            <div class="drop-down">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img id="from-flag" src="https://flagsapi.com/US/flat/64.png">
+                        <select name="from" id="from-currency">
+                            <option value="USD" selected>USD</option>
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-container">
+                        <img id="to-flag" src="https://flagsapi.com/IN/flat/64.png">
+                        <select name="to" id="to-currency">
+                            <option value="INR" selected>INR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="target">
+                <p>Amount: </p>
+                <input value="0.0" type="text" id="target-val" readonly>
+            </div>
+            <button type="button" id="convert-btn">Exchange Currency</button>
+        </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
